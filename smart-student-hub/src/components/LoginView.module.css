@@ -1,0 +1,209 @@
+.loginBackground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    background: var(--primary-gradient);
+}
+
+.loginContainer {
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    max-width: 1200px;
+    padding: var(--space-xl);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0 auto;
+}
+
+.loginCard {
+    background: var(--bg-secondary);
+    padding: var(--space-2xl);
+    border-radius: var(--radius-2xl);
+    box-shadow: var(--shadow-xl);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.loginHeader {
+    text-align: center;
+    margin-bottom: var(--space-2xl);
+}
+
+.logoSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-md);
+    margin-bottom: var(--space-lg);
+}
+
+.logoSection i, .logoSection svg {
+    font-size: 3rem;
+    background: var(--primary-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.logoSection h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.loginSubtitle {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+}
+
+.roleSelection h2 {
+    text-align: center;
+    margin-bottom: var(--space-sm);
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+.roleSelection p {
+    text-align: center;
+    color: var(--text-secondary);
+    margin-bottom: var(--space-xl);
+}
+
+.roleCardsLandscape {
+    display: flex;
+    flex-direction: row;
+    gap: var(--space-lg);
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.roleCard {
+    background: var(--bg-tertiary);
+    padding: var(--space-xl);
+    border-radius: var(--radius-xl);
+    cursor: pointer;
+    transition: all var(--transition-normal);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-lg);
+    border: 2px solid transparent;
+    min-width: 250px;
+    flex: 1;
+    max-width: 300px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.roleCard:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--primary-gradient);
+}
+
+.studentCard:hover {
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.05) 0%, rgba(118, 75, 162, 0.05) 100%);
+}
+
+.facultyCard:hover {
+    background: linear-gradient(135deg, rgba(240, 147, 251, 0.05) 0%, rgba(245, 87, 108, 0.05) 100%);
+}
+
+.adminCard:hover {
+    background: linear-gradient(135deg, rgba(79, 172, 254, 0.05) 0%, rgba(0, 242, 254, 0.05) 100%);
+}
+
+.roleIcon {
+    width: 60px;
+    height: 60px;
+    border-radius: var(--radius-xl);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: white;
+    flex-shrink: 0;
+}
+
+.studentCard .roleIcon {
+    background: var(--primary-gradient);
+}
+
+.facultyCard .roleIcon {
+    background: var(--secondary-gradient);
+}
+
+.adminCard .roleIcon {
+    background: var(--accent-gradient);
+}
+
+.roleContent h3 {
+    font-weight: 600;
+    margin-bottom: var(--space-sm);
+    color: var(--text-primary);
+}
+
+.roleContent p {
+    color: var(--text-secondary);
+    margin-bottom: var(--space-md);
+    text-align: center;
+}
+
+.roleArrow {
+    font-size: 1.2rem;
+    color: var(--text-muted);
+    transition: all var(--transition-normal);
+}
+
+.roleCard:hover .roleArrow {
+    color: var(--text-primary);
+    transform: translateX(4px);
+}
+
+.loginFooter {
+    margin-top: var(--space-2xl);
+}
+
+.featuresPreview {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: var(--space-xl);
+    padding: var(--space-lg);
+    background: var(--bg-tertiary);
+    border-radius: var(--radius-xl);
+}
+
+.featureItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-sm);
+    text-align: center;
+}
+
+.featureItem i, .featureItem svg {
+    font-size: 1.5rem;
+    background: var(--primary-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.featureItem span {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+
+.loginHelp a {
+    color: var(--primary-gradient);
+    text-decoration: none;
+    font-weight: 500;
+}

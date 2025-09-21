@@ -1,0 +1,29 @@
+.dashboard {
+    display: flex;
+    min-height: 100vh;
+}
+
+.mainContent {
+    flex: 1;
+    padding: var(--space-2xl);
+    background: var(--bg-primary);
+    overflow-y: auto;
+}
+
+.dashboardContent {
+    display: none;
+    animation: fadeInUp 0.5s ease;
+}
+
+.dashboardContent.active {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .dashboard {
+        flex-direction: column;
+    }
+    .mainContent {
+        padding: var(--space-lg);
+    }
+}
